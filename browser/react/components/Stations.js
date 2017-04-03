@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 export default function Stations(props){
-  console.log(props)
+  console.log('Stations props', props);
   return(
     <div>
       <h3>Stations</h3>
@@ -13,9 +13,14 @@ export default function Stations(props){
             <div className="list-group-item" key={station}>
               <Link to={`/stations/${station.toLowerCase()}`}>{station}</Link>
             </div>
+
           );
         })
       }
+      {
+        props.children && React.cloneElement(props.children, Object.assign({}, props,))
+      }
+
       </div>
     </div>)
 }
