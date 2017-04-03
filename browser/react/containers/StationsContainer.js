@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import Stations from '../components/Stations';
 
-export const songsToStations = function (songs){
+function songsToStations (songs){
   let stationsObj = {};
   songs.forEach(function(song){
     let songGenre = song.genre;
@@ -11,7 +11,7 @@ export const songsToStations = function (songs){
     stationsObj[songGenre].push(song);
   });
   return stationsObj;
-};
+}
 
 function mapStateToProps (state){
   return {
@@ -20,6 +20,7 @@ function mapStateToProps (state){
 }
 
 function mapDispatchToProps (dispatch){
+
   return {
 
   };

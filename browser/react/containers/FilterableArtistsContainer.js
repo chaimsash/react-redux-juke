@@ -1,6 +1,44 @@
-import React from 'react';
+// import {connect} from 'react-redux';
 import FilterInput from '../components/FilterInput';
 import Artists from '../components/Artists';
+//
+// function mapStateToProps (state){
+//   console.log("FilterableArtistsContainer", state)
+//   return {
+//     // inputValue: '',
+//     filteredArtists: state.list.filter(artist => artist.name.match(inputValue))
+//   }
+// }
+//
+// function mapDispatchToProps (dispatch){
+//   return {
+//     //   handleChange(evt) {
+//     //     this.setState({
+//     //       inputValue: evt.target.value
+//     //     });
+//     //   }
+//     }
+//   }
+//
+// const FilterableArtistsContainer = connect(mapStateToProps, mapDispatchToProps);
+//
+// FilterableArtistsContainer(FilterInput)
+// FilterableArtistsContainer(Artists)
+// //       <div>
+// //         <FilterInput
+// //           handleChange={this.handleChange}
+// //           inputValue={inputValue}
+// //         />
+// //         <Artists artists={filteredArtists}/>
+// //       </div>
+//
+//
+//
+// export default FilterableArtistsContainer;
+
+
+import React from 'react';
+
 
 import store from '../store';
 
