@@ -1,14 +1,12 @@
 import {connect} from 'react-redux';
 import {searchLyrics} from '../action-creators/lyrics';
-import LyricsStatefullContainer from './LyricsStatefullContainer'
-
-
+import LyricsStatefullContainer from './LyricsStatefullContainer';
 
 function mapStateToProps (state){
   return {
     text: state.lyrics.text
 
-  }
+  };
 }
 
 function mapDispatchToProps (dispatch){

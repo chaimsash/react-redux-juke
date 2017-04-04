@@ -3,7 +3,7 @@ import NewPlaylist from '../components/NewPlaylist';
 import store from '../store';
 import {addNewPlaylist} from '../action-creators/playlists';
 
-class NewPlaylistContainer extends React.Component {
+class NewPLaylistStatefullContainer extends React.Component {
 
   constructor(props) {
     super(props);
@@ -23,10 +23,9 @@ class NewPlaylistContainer extends React.Component {
     });
   }
 
-  handleSubmit(evt) {
-
-    evt.preventDefault();
-    store.dispatch(addNewPlaylist(this.state.inputValue));
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.inputSubmit(this.state.inputValue);
   }
 
   render() {
@@ -50,4 +49,4 @@ class NewPlaylistContainer extends React.Component {
 
 }
 
-export default NewPlaylistContainer;
+export default NewPLaylistStatefullContainer;

@@ -27,7 +27,7 @@ class LyricsStatefullContainer extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.searchLyricsMethod(this.state.artistQuery, this.state.songQuery)
+    this.props.searchLyricsMethod(this.state.artistQuery, this.state.songQuery);
   }
 
   render() {
@@ -46,4 +46,3 @@ class LyricsStatefullContainer extends Component {
 }
 
 export default LyricsStatefullContainer;
-
